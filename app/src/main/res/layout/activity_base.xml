@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Base">
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:background="@drawable/roun_corners"
+        android:backgroundTint="@color/base_theme"
+
+        app:barrierMargin="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_gravity="left"
+            android:layout_width="195dp"
+            android:layout_height="74dp"
+            android:layout_margin="10dp"
+            android:text="@string/hello"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/invise"
+            android:layout_gravity="right"
+            app:srcCompat="@drawable/settings_icon" />
+
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

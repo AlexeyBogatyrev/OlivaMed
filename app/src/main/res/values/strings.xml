@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OlivaMed</string>
+    <string name="login_but">Войти</string>
+    <string name="hello_oliva">ОЛИВАМЕД</string>
+    <string name="skip"><u>Пропустить</u></string>
+    <string name="hello">Добро пожаловать!</string>
+</resources>
