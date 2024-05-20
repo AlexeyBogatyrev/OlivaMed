@@ -4,4 +4,6 @@
     <string name="hello_oliva">ОЛИВАМЕД</string>
     <string name="skip"><u>Пропустить</u></string>
     <string name="hello">Добро пожаловать!</string>
+    <string name="search">Поиск</string>
+    <string name="our_doctrors">Наши врачи</string>
 </resources>
