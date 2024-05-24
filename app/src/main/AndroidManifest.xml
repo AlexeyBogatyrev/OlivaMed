@@ -12,8 +12,15 @@
         android:theme="@style/Theme.OlivaMed"
         tools:targetApi="31">
         <activity
-            android:name=".Base"
+            android:name=".History"
             android:exported="false" />
+        <activity
+            android:name=".AddList"
+            android:exported="false" />
+        <activity
+            android:name=".Base"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".MainActivity"
             android:exported="true">

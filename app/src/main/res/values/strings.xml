@@ -6,4 +6,15 @@
     <string name="hello">Добро пожаловать!</string>
     <string name="search">Поиск</string>
     <string name="our_doctrors">Наши врачи</string>
+    <string name="stock">Акции</string>
+    <string name="description_stock">Чтобы не пропускать выгодные предложения отслеживайте актуальные мероприятия.</string>
+    <string name="description_add_list">С нами ваше здоровье становится исключительным событием, а забота - невероятным опытом!</string>
+    <string name="add_list">Запись</string>
+    <string name="information_about_us">Информация о нас</string>
+    <string name="adres">638500, г.Ростов-на-Дону, ул. Тургеневская, 12</string>
+    <string name="telephone_number">+7 (383) 290-34-34</string>
+    <string name="grafik">График работы: пн-пт: 8:00 - 20:00 cб,вс: выходные дни </string>
+    <string name="add_list_priem">Запись на прием</string>
+    <string name="add_list_another_person">Запись для другого человека</string>
+    <string name="politic">Согласен(а) с политикой конфиденциальности</string>
 </resources>
