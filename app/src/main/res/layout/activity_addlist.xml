@@ -137,7 +137,7 @@
         android:layout_gravity="center"
         android:background="@drawable/roundstyle_base_theme"
         android:backgroundTint="@color/base_theme"
-        android:onClick="gotoaddlist2"
+        android:onClick="goToZapis"
         android:text="@string/add_list2"
         android:textColor="@color/dark_theme"
         android:textSize="18sp"
@@ -183,6 +183,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginRight="20dp"
+            android:onClick="goToVoprosOtvet"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/message_dark_foreground" />
 
@@ -191,12 +192,14 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginRight="20dp"
+            android:onClick="goToUslugi"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/history_dark_foreground" />
 
         <ImageButton
             android:id="@+id/imageButtonPeople"
             android:layout_width="60dp"
+            android:onClick="goToJob"
             android:layout_height="60dp"
             android:layout_marginRight="5dp"
             android:backgroundTint="@color/invise"

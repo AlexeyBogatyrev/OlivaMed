@@ -22,13 +22,14 @@
 
         <ImageButton
             android:id="@+id/imageButton3"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:onClick="goToInformathion"
+            android:layout_width="39dp"
+            android:layout_height="36dp"
             android:layout_gravity="right"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
             android:backgroundTint="@color/invise"
-            app:srcCompat="@drawable/telephone_foreground" />
+            app:srcCompat="@drawable/information_light_foreground" />
 
 
     </FrameLayout>
@@ -100,6 +101,7 @@
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
                         android:layout_marginRight="10dp"
+                        android:onClick="goToDoctor"
                         android:scaleType="centerCrop"
                         android:background="@null"
                         android:src="@drawable/doctor2" />
@@ -109,6 +111,7 @@
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
                         android:layout_marginRight="10dp"
+                        android:onClick="goToDoctor"
                         android:scaleType="centerCrop"
                         android:background="@null"
                         android:src="@drawable/doctor3" />
@@ -117,6 +120,7 @@
                         android:layout_width="124dp"
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
+                        android:onClick="goToDoctor"
                         android:layout_marginRight="10dp"
                         android:scaleType="centerCrop"
                         android:background="@null"
@@ -150,7 +154,7 @@
 
             <Button
                 android:id="@+id/button_stock"
-                android:onClick="gotoHistory"
+                android:onClick="goToSale"
                 android:layout_width="124dp"
                 android:layout_height="45dp"
                 android:layout_gravity="center"
@@ -262,6 +266,7 @@
             android:layout_marginLeft="5dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/invise"
+            android:onClick="gotoBase"
             app:srcCompat="@drawable/home_white_foreground" />
 
         <ImageButton
@@ -278,20 +283,23 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginRight="20dp"
+            android:onClick="goToVoprosOtvet"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/message_dark_foreground" />
 
         <ImageButton
-            android:id="@+id/imageButtonHistory"
+            android:id="@+id/imageButtonUslugi"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginRight="20dp"
+            android:onClick="goToUslugi"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/history_dark_foreground" />
 
         <ImageButton
             android:id="@+id/imageButtonPeople"
             android:layout_width="60dp"
+            android:onClick="goToJob"
             android:layout_height="60dp"
             android:layout_marginRight="5dp"
             android:backgroundTint="@color/invise"

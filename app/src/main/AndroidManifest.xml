@@ -27,6 +27,12 @@
             android:name=".Doctor"
             android:exported="false" />
         <activity
+            android:name=".Vopros_Otvet"
+            android:exported="false" />
+        <activity
+            android:name=".Uslugi"
+            android:exported="false" />
+        <activity
             android:name=".Base"
             android:exported="false"
             android:windowSoftInputMode="adjustPan"/>

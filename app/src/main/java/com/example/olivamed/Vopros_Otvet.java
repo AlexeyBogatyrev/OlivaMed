@@ -12,29 +12,21 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-public class AddList extends AppCompatActivity {
+public class Vopros_Otvet extends AppCompatActivity {
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_addlist);
+        setContentView(R.layout.vopros_otvet);
     }
 
     public void goTobase(View v) {
         Intent intent = new Intent(this, Base.class);
         startActivity(intent);
     }
-
-
-    public void openPoliticText(View v)
-    {
-        Intent intent = new Intent(this, PoliticText.class);
-        startActivity(intent);
-    }
-
-    public void goToVoprosOtvet(View v){
-        Intent intent = new Intent(this, Vopros_Otvet.class);
+    public void gotoaddlist(View v) {
+        Intent intent = new Intent(this, AddList.class);
         startActivity(intent);
     }
     public void goToUslugi(View v){
@@ -45,10 +37,5 @@ public class AddList extends AppCompatActivity {
         Intent intent = new Intent(this, Job.class);
         startActivity(intent);
     }
-    public void goToZapis(View v){
-        Toast.makeText(AddList.this, "В разработке!", Toast.LENGTH_SHORT).show();
-    }
-
 
 }
-

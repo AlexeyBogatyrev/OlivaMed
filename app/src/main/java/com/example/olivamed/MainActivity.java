@@ -12,8 +12,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.yandex.mapkit.MapKitFactory;
-
 public class MainActivity extends AppCompatActivity {
     Dialog dialog;
 
