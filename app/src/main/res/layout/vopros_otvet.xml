@@ -66,7 +66,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="90dp"
-                    android:text="@string/otvet"
+                    android:text="Принести все необходимое возможно в любое времня, необхоидмо зарнее проконсультроваться у врача. "
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </FrameLayout>
@@ -94,40 +94,14 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:layout_marginRight="5dp"
                     android:layout_marginTop="90dp"
-                    android:text="@string/otvet"
+                    android:text="При онлайн записи Вы оставляете заявку, после чего с вами связывается менеджер для подтверждения"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </FrameLayout>
 
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/roun_corners_full">
 
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-
-                    android:text="@string/vopros3"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="19sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="90dp"
-                    android:text="@string/otvet"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-            </FrameLayout>
 
             <FrameLayout
                 android:layout_width="match_parent"
@@ -153,42 +127,10 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="90dp"
-                    android:text="@string/otvet"
+                    android:text="Вы можете записаться оналйн или оффлайн"
                     android:textColor="@color/white"
                     android:textSize="18sp" />
             </FrameLayout>
-
-            <FrameLayout
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginLeft="5dp"
-                android:layout_marginRight="5dp"
-                android:layout_marginBottom="15dp"
-                android:background="@drawable/roun_corners_full">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="25dp"
-                    android:layout_marginTop="10dp"
-
-                    android:text="@string/vopros5"
-                    android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="19sp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="90dp"
-                    android:text="@string/otvet"
-                    android:textColor="@color/white"
-                    android:textSize="18sp" />
-            </FrameLayout>
-
-
-
 
 
 

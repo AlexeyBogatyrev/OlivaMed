@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Uslugi">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Услуги"
+        android:textColor="@color/dark_theme"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.175"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="620dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            >
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roun_corners_full">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/usluga1"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:text="от 1500 руб"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button_add_list"
+                    android:onClick="gotoaddlist"
+                    android:layout_width="124dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundstyle_base_theme"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/add_list"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roun_corners_full">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/usluga2"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:text="от 1500 руб"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button_add_list"
+                    android:onClick="gotoaddlist"
+                    android:layout_width="124dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundstyle_base_theme"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/add_list"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="DuplicateIds" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roun_corners_full">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/usluga3"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:text="от 1000 руб"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button_add_list"
+                    android:onClick="gotoaddlist"
+                    android:layout_width="124dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundstyle_base_theme"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/add_list"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="DuplicateIds" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roun_corners_full">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/usluga4"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="40dp"
+                    android:text="от 1500 руб"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button_add_list"
+                    android:onClick="gotoaddlist"
+                    android:layout_width="124dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundstyle_base_theme"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/add_list"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="DuplicateIds" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/roun_corners_full">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+
+                    android:text="@string/usluga6"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="19sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="50dp"
+                    android:text="от 2500 руб"
+                    android:layout_gravity="right"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/button_add_list"
+                    android:onClick="gotoaddlist"
+                    android:layout_width="124dp"
+                    android:layout_height="45dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/roundstyle_base_theme"
+                    android:backgroundTint="@color/white"
+                    android:text="@string/add_list"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    tools:ignore="DuplicateIds" />
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/base_theme"
+        android:orientation="horizontal"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <ImageButton
+            android:id="@+id/imageButtonMainHome"
+            android:onClick="goTobase"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/invise"
+            app:srcCompat="@drawable/home_dark_foreground" />
+
+        <ImageButton
+            android:id="@+id/imageButtonAddList"
+            android:layout_width="60dp"
+            android:onClick="gotoaddlist"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/invise"
+            app:srcCompat="@drawable/add_list_dark_foreground" />
+
+        <ImageButton
+            android:id="@+id/imageButtonChat"
+            android:layout_width="60dp"
+            android:onClick="goToVoprosOtvet"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/invise"
+            app:srcCompat="@drawable/message_dark_foreground" />
+
+        <ImageButton
+            android:id="@+id/imageButtonHistory"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="20dp"
+            android:backgroundTint="@color/invise"
+            app:srcCompat="@drawable/history_light_foreground" />
+
+        <ImageButton
+            android:id="@+id/imageButtonPeople"
+            android:layout_width="60dp"
+            android:onClick="goToJob"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:backgroundTint="@color/invise"
+            app:srcCompat="@drawable/people_dark_foreground" />
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
