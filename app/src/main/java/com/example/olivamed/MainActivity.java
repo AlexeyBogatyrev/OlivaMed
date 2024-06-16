@@ -12,6 +12,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.yandex.mapkit.MapKitFactory;
+
 public class MainActivity extends AppCompatActivity {
     Dialog dialog;
 
@@ -20,28 +22,53 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         dialog = new Dialog(MainActivity.this);
+
     }
-    public void goTobase(View v)
-    {
+
+    public void goTobase(View v) {
         Intent intent = new Intent(this, Base.class);
         startActivity(intent);
     }
 
-    public void goToAutorization(View v)
-    {
-        showCustomDialog();
+    public void goToAutorization(View v) {
+        showCustomDialogAutorization();
     }
 
-    private void showCustomDialog() {
+    private void showCustomDialogAutorization() {
         dialog.setContentView(R.layout.dialog_autorization);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         dialog.setCancelable(true);
         Button but_log = dialog.findViewById(R.id.button_login);
+        Button but_reg = dialog.findViewById(R.id.button_registration_auto);
         EditText loginE, passE;
         loginE = dialog.findViewById(R.id.login);
         passE = dialog.findViewById(R.id.password);
 
+
         but_log.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(MainActivity.this, "В разработке!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        but_reg.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                dialog.dismiss();
+                showCustomDialogRegistration();
+            }
+        });
+
+        dialog.show();
+    }
+    private void showCustomDialogRegistration() {
+        dialog.setContentView(R.layout.dialog_registration);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setCancelable(true);
+        Button registration = dialog.findViewById(R.id.button_registration);
+
+        registration.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "В разработке!", Toast.LENGTH_SHORT).show();
@@ -51,5 +78,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-
-}
+    }

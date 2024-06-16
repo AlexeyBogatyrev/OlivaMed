@@ -10,5 +10,6 @@
     <color name="base_theme">#6C755A</color>
     <color name="dark_theme">#3D4233</color>
     <color name="invise">#00FFFFFF</color>
+    <color name="gray">#DCDCDC</color>
 
 </resources>

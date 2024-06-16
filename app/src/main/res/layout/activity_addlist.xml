@@ -15,6 +15,7 @@
         android:textColor="@color/dark_theme"
         android:textSize="30sp"
         android:textStyle="bold"
+        android:onClick="gotoBase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
@@ -22,30 +23,19 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
-    <RadioButton
-        android:id="@+id/radioButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="13dp"
-        android:text="@string/add_list_another_person"
-        android:textSize="14sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
-        app:layout_constraintVertical_bias="0.007" />
+
+
 
     <RadioButton
         android:id="@+id/radioButton2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="13dp"
-        android:text="@string/politic"
+
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.163"
+        app:layout_constraintHorizontal_bias="0.042"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.719" />
@@ -57,15 +47,15 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.199">
+        app:layout_constraintVertical_bias="0.19">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:hint="Фамилия" />
+            android:hint="Врач" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -140,12 +130,30 @@
             android:hint="Комментарий" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <Button
+        android:id="@+id/button_add_list"
+        android:layout_width="140dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:background="@drawable/roundstyle_base_theme"
+        android:backgroundTint="@color/base_theme"
+        android:onClick="gotoaddlist2"
+        android:text="@string/add_list2"
+        android:textColor="@color/dark_theme"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.943" />
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@color/base_theme"
         android:orientation="horizontal"
+        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -190,11 +198,28 @@
             android:id="@+id/imageButtonPeople"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="5dp"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/people_dark_foreground" />
 
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/but_politic_text"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="329dp"
+        android:layout_height="38dp"
+        android:onClick="openPoliticText"
+        android:text="@string/politic"
+        android:textColor="@color/base_theme"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toTopOf="@+id/button_add_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/radioButton2"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
+        app:layout_constraintVertical_bias="0.319" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

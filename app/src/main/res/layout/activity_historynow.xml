@@ -5,13 +5,13 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".History">
+    tools:context=".Historynow">
 
     <TextView
         android:id="@+id/textViewHistory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/my_history"
+        android:text="Мои записи"
         android:textColor="@color/dark_theme"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -22,6 +22,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
 
+
     <Button
         android:id="@+id/button_skip"
         style="?android:attr/borderlessButtonStyle"
@@ -29,16 +30,18 @@
         android:layout_height="58dp"
         android:layout_marginStart="112dp"
         android:layout_marginTop="250dp"
-        android:layout_marginEnd="99dp"
+        android:layout_marginEnd="80dp"
         android:layout_marginBottom="130dp"
         android:backgroundTint="@color/base_theme"
         android:onClick="goToNowHistory"
-        android:text="@string/nowHistory"
+        android:text="@string/my_history_now"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        app:layout_constraintVertical_bias="1.0" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -46,7 +49,6 @@
         android:layout_height="65dp"
         android:background="@color/base_theme"
         android:orientation="horizontal"
-        android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -91,7 +93,7 @@
             android:id="@+id/imageButtonPeople"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="20dp"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/people_dark_foreground" />
 
@@ -104,11 +106,14 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="37dp"
         android:layout_marginEnd="172dp"
-        android:layout_marginBottom="435dp"
-        android:text="@string/histori_default"
+        android:layout_marginBottom="544dp"
+        android:text="@string/histori_now_default"
         android:textSize="17sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/textViewHistory"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>

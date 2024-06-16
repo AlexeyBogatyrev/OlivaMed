@@ -18,6 +18,15 @@
             android:name=".AddList"
             android:exported="false" />
         <activity
+            android:name=".Job"
+            android:exported="false" />
+        <activity
+            android:name=".PoliticText"
+            android:exported="false" />
+        <activity
+            android:name=".Doctor"
+            android:exported="false" />
+        <activity
             android:name=".Base"
             android:exported="false"
             android:windowSoftInputMode="adjustPan"/>

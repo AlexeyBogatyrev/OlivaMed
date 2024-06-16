@@ -10,7 +10,7 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
-        android:layout_height="174dp"
+        android:layout_height="135dp"
         android:background="@drawable/roun_corners"
         android:backgroundTint="@color/base_theme"
 
@@ -21,49 +21,17 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="5dp"
-            android:backgroundTint="@color/invise"
-            app:srcCompat="@drawable/settings_icon" />
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_gravity="right"
-            android:layout_marginTop="5dp"
-            android:layout_marginRight="40dp"
-            android:backgroundTint="@color/invise"
-            app:srcCompat="@drawable/notification_foreground" />
-
-        <ImageButton
             android:id="@+id/imageButton3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_gravity="right"
             android:layout_marginTop="5dp"
-            android:layout_marginRight="80dp"
+            android:layout_marginRight="10dp"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/telephone_foreground" />
 
 
     </FrameLayout>
-
-    <SearchView
-        android:id="@+id/searchView_home"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:background="@drawable/roundstyle_search"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.20"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.130"
-        app:queryHint="@string/search" />
 
     <TextView
         android:id="@+id/textView3"
@@ -71,6 +39,7 @@
         android:layout_height="74dp"
         android:layout_gravity="left"
         android:layout_margin="10dp"
+        android:layout_marginTop="20dp"
         android:text="@string/hello"
         android:textColor="@color/white"
         android:textSize="24sp"
@@ -87,8 +56,9 @@
         android:id="@+id/scrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="174dp"
-        android:layout_marginBottom="65dp">
+        android:layout_marginTop="140dp"
+        android:layout_marginBottom="65dp"
+        android:scrollbars="none">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -115,36 +85,41 @@
                     android:layout_height="wrap_content"
                     android:orientation="horizontal">
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="124dp"
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
                         android:layout_marginRight="10dp"
                         android:scaleType="centerCrop"
+                        android:onClick="goToDoctor"
+                        android:background="@null"
                         android:src="@drawable/doctor1" />
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="124dp"
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
                         android:layout_marginRight="10dp"
                         android:scaleType="centerCrop"
+                        android:background="@null"
                         android:src="@drawable/doctor2" />
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="124dp"
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
                         android:layout_marginRight="10dp"
                         android:scaleType="centerCrop"
+                        android:background="@null"
                         android:src="@drawable/doctor3" />
 
-                    <ImageView
+                    <ImageButton
                         android:layout_width="124dp"
                         android:layout_height="174dp"
                         android:layout_margin="5dp"
                         android:layout_marginRight="10dp"
                         android:scaleType="centerCrop"
+                        android:background="@null"
                         android:src="@drawable/doctor1" />
 
                 </LinearLayout>
@@ -227,12 +202,13 @@
                 android:textSize="25sp"
                 android:textStyle="bold" />
 
-            <com.yandex.mapkit.mapview.MapView
-                android:id="@+id/mapView"
+            <ImageView
+                android:id="@+id/imageBase"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10dp" />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/imagebase"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -241,7 +217,7 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/dark_theme"
                 android:text="@string/adres"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -250,17 +226,18 @@
                 android:layout_marginLeft="10dp"
                 android:textColor="@color/dark_theme"
                 android:text="@string/telephone_number"
-                android:textSize="20sp"
+                android:textSize="15sp"
                 android:textStyle="bold"/>
+
             <TextView
-                android:layout_width="200dp"
+                android:layout_width="281dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp"
                 android:layout_marginLeft="10dp"
-                android:textColor="@color/dark_theme"
+                android:layout_marginTop="5dp"
                 android:text="@string/grafik"
-                android:textSize="20sp"
-                android:textStyle="bold"/>
+                android:textColor="@color/dark_theme"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
         </LinearLayout>
     </ScrollView>
@@ -273,6 +250,7 @@
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        android:gravity="center"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0">
@@ -315,7 +293,7 @@
             android:id="@+id/imageButtonPeople"
             android:layout_width="60dp"
             android:layout_height="60dp"
-            android:layout_marginRight="20dp"
+            android:layout_marginRight="5dp"
             android:backgroundTint="@color/invise"
             app:srcCompat="@drawable/people_dark_foreground" />
 
