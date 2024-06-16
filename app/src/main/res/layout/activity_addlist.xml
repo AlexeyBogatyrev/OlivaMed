@@ -5,25 +5,25 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddList">
+    tools:context=".AddList"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="-45dp">
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:onClick="gotoBase"
         android:text="@string/add_list_priem"
         android:textColor="@color/dark_theme"
         android:textSize="30sp"
         android:textStyle="bold"
-        android:onClick="gotoBase"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.175"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023" />
-
-
 
 
     <RadioButton
@@ -40,95 +40,49 @@
         app:layout_constraintTop_toBottomOf="@+id/textView4"
         app:layout_constraintVertical_bias="0.719" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout1"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/but_politic_text"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.139"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19">
+        app:layout_constraintTop_toBottomOf="@+id/textView4">
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="280dp"
+        <EditText
+            android:id="@+id/name_zapic"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Врач" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout2"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.314">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="280dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:hint="Имя"
+             />
+        <EditText
+            android:id="@+id/telephone_zapic"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Имя" />
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-    android:id="@+id/textInputLayout3"
-    style="?android:attr/borderlessButtonStyle"
-    android:layout_width="300dp"
-    android:layout_height="wrap_content"
-    app:layout_constraintBottom_toBottomOf="parent"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintHorizontal_bias="0.144"
-    app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent"
-    app:layout_constraintVertical_bias="0.428">
-
-    <com.google.android.material.textfield.TextInputEditText
-        android:layout_width="280dp"
-        android:layout_height="wrap_content"
-        android:hint="Email" />
-</com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout4"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.542">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="280dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:hint="Номер телефона"
+            />
+        <EditText
+            android:id="@+id/email_zapic"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Филиал" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:hint="Электронная почта"
+            />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/textInputLayout5"
-        style="?android:attr/borderlessButtonStyle"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.144"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.657">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="280dp"
+        <EditText
+            android:id="@+id/coment_zapic"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Комментарий" />
-    </com.google.android.material.textfield.TextInputLayout>
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="25dp"
+            android:hint="Комментарий"
+            />
+    </LinearLayout>
 
     <Button
         android:id="@+id/button_add_list"
@@ -152,8 +106,8 @@
         android:layout_width="match_parent"
         android:layout_height="65dp"
         android:background="@color/base_theme"
-        android:orientation="horizontal"
         android:gravity="center"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -162,12 +116,12 @@
 
         <ImageButton
             android:id="@+id/imageButtonMainHome"
-            android:onClick="goTobase"
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="20dp"
             android:backgroundTint="@color/invise"
+            android:onClick="goTobase"
             app:srcCompat="@drawable/home_dark_foreground" />
 
         <ImageButton
@@ -183,8 +137,8 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginRight="20dp"
-            android:onClick="goToVoprosOtvet"
             android:backgroundTint="@color/invise"
+            android:onClick="goToVoprosOtvet"
             app:srcCompat="@drawable/message_dark_foreground" />
 
         <ImageButton
@@ -192,17 +146,17 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginRight="20dp"
-            android:onClick="goToUslugi"
             android:backgroundTint="@color/invise"
+            android:onClick="goToUslugi"
             app:srcCompat="@drawable/history_dark_foreground" />
 
         <ImageButton
             android:id="@+id/imageButtonPeople"
             android:layout_width="60dp"
-            android:onClick="goToJob"
             android:layout_height="60dp"
             android:layout_marginRight="5dp"
             android:backgroundTint="@color/invise"
+            android:onClick="goToJob"
             app:srcCompat="@drawable/people_dark_foreground" />
 
 
@@ -213,6 +167,7 @@
         style="?android:attr/borderlessButtonStyle"
         android:layout_width="329dp"
         android:layout_height="38dp"
+        android:layout_marginBottom="36dp"
         android:onClick="openPoliticText"
         android:text="@string/politic"
         android:textColor="@color/base_theme"
@@ -221,8 +176,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/radioButton2"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout5"
-        app:layout_constraintVertical_bias="0.319" />
+
+        app:layout_constraintVertical_bias="0.701" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
